@@ -1,6 +1,7 @@
 import Foundation
 
-struct BuzzEntry: Identifiable {
+struct BuzzEntry: Identifiable, Codable {
+    let id = UUID()
     let contactId: String
     var isBuzzed: Bool
     var localBirthday: DateComponents?
@@ -8,4 +9,8 @@ struct BuzzEntry: Identifiable {
     var lastScheduledAt: Date?
     var lastRequestDate: Date?
     var requestChannel: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id, contactId, isBuzzed, localBirthday, notificationId, lastScheduledAt, lastRequestDate, requestChannel
+    }
 }
