@@ -1,0 +1,43 @@
+# Xcode build artifacts
+DerivedData/
+build/
+
+# User-specific Xcode files
+*.xcuserdata/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+/.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# General
+.DS_Store
+*.swp
+*.lock
+*.tmp
+
+# SwiftPM
+.swiftpm/
+
+# Xcode Project Files (User Data)
+*.mode1v3
+*.mode2v3
+*.pbxuser
+
+# Simulator logs
+*.xcuserstate
